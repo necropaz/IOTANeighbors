@@ -32,7 +32,7 @@ while True:
 				for x in range(0,len(lines)):
 					if ip in lines[x-1]:
 						del lines[x-1]
-						print("deletet line:"+str(x))
+						print("deletet line:"+str(x-1))
 
 		f.close()
 		f=open(filepath, 'w')
