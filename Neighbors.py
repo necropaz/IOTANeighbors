@@ -33,12 +33,11 @@ while True:
 					if ip in lines[x-1]:
 						del lines[x-1]
 						print("deletet line:"+str(x-1))
-
+				print("Succesfully delet bad Neighbors!")
 		f.close()
 		f=open(filepath, 'w')
 		f.write("".join(lines))
 		f.close()
-		print("Succesfully delet bad Neighbors!")
 		break
 	elif respond=="n":
 		exit()
