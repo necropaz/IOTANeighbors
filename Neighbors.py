@@ -29,7 +29,7 @@ while True:
 				ip=str(neighbors['neighbors'][i]['node'])
 				ip.replace(ip[:4], '+udp://')
 				print(ip)
-				for x in range(0,len(lines)-1):
+				for x in range(0,len(lines)):
 					if ip in lines[x-1]:
 						del lines[x-1]
 						print("deletet line:"+str(x))
